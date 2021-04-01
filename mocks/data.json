@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Title 1",
+      "shortText": "Text 1",
+      "text": "Text 1",
+      "price": "100",
+      "photo": "https://images.unsplash.com/photo-1617287287784-7e6b90c6cfd7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80",
+      "inStock": true
+    },
+    {
+      "id": "2",
+      "title": "Title 2",
+      "shortText": "Text 2",
+      "text": "Text 2",
+      "price": "200",
+      "photo": "https://images.unsplash.com/photo-1617282752087-b9808a252e88?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1226&q=80",
+      "inStock": false
+    },
+    {
+      "id": "3",
+      "title": "Title 3",
+      "shortText": "Text 3",
+      "text": "Text 3",
+      "price": "98",
+      "photo": "https://images.unsplash.com/photo-1617234501719-d9e36a1adfac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "inStock": true
+    },
+    {
+      "id": "4",
+      "title": "Title 4",
+      "shortText": "Text 4",
+      "text": "Text 4",
+      "price": "30",
+      "photo": "https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "inStock": true
+    }
+  ]
+}

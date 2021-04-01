@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<main>
+  <app-catalog-intro></app-catalog-intro>
+  <app-catalog-search></app-catalog-search>
+
+  <section class="products">
+    <div class="container px-4 has-text-centered">
+      <p class="title is-3 mb-t">Products</p>
+
+      <div class="products-list">
+        <app-catalog-item
+          *ngFor="let product of products"
+          [product]="product"
+        ></app-catalog-item>
+      </div>
+    </div>
+  </section>
+</main>

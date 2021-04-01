@@ -1,0 +1,37 @@
+.products {
+  padding: 40px 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-block {
+  width: 100%;
+  margin-right: 25px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.info {
+  width: 400px;
+}
+
+@media (max-width: 850px) {
+  .inner {
+    flex-direction: column;
+  }
+
+  .image-block {
+    margin-right: 0;
+  }
+
+  .info {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

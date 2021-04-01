@@ -1,0 +1,18 @@
+<a class="item" [routerLink]="['product/', product.id]">
+  <p class="title is-4">{{ product.title }}</p>
+  <p class="text">{{ product.shortText }}</p>
+
+  <div class="item-footer">
+    <div class="price">
+      <span>{{ product.price | currency }}</span>
+    </div>
+
+    <button
+      class="button plus"
+      (click)="containInBasket ? removeFromBasket($event) : addToBasket($event)"
+      [disabled]="!product.inStock"
+    >
+      <i class="material-icons">{{ containInBasket ? "remove" : "add" }}</i>
+    </button>
+  </div>
+</a>

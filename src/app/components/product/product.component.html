@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<main>
+  <section class="products">
+    <div class="container px-4">
+      <div class="inner" *ngIf="product">
+        <div class="image-block">
+          <img src="{{ product.photo }}" alt="Product image" class="image" />
+        </div>
+
+        <div class="info">
+          <p class="title is-3 mb-3">{{ product.title }}</p>
+          <p class="mb-3">{{ product.text }}</p>
+          <p class="title is-4 mb-2">{{ product.price | currency }}</p>
+          <p class="mb-3" [class.has-text-danger]="!product.inStock">
+            Status: {{ product.inStock ? "In stock" : "Out of stock" }}
+          </p>
+
+          <button
+            class="button is-fullwidth mb-3"
+            [class.is-danger]="containInBasket"
+            [class.is-primary]="!containInBasket"
+            [disabled]="!product.inStock"
+            (click)="containInBasket ? removeFromBasket() : addToBasket()"
+          >
+            {{
+              containInBasket
+                ? "Remove from shopping cart"
+                : "Add to Shopping Cart"
+            }}
+          </button>
+
+          <button class="button is-fullwidth">Call the seller</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
